@@ -9,6 +9,9 @@
 | 9th Oct 2025     | Both        | Met with professor to discuss project scope and confirm selected tools & apps.  | 0.5        |
 | 21st Oct 2025    | Umesh       | Researched and set up ALEAPP and MobSF; drafted extraction workflow for Dropbox & Strava. | 1.0        |
 | 22nd Oct 2025    | Sahan       | Researched and set up Drozer and JADX; drafted assessment plan for Trust Wallet & Spotify. | 1.0        |
+| 28th Oct 2025    | Umesh       | Installed Android SDK command-line tools and configured AVD, ADB, SDKManager, and APKAnalyzer paths. Created and launched emulator. Installed Dropbox and Strava APKs for testing. | 2 |
+| 29th Oct 2025 (Night) | Umesh  | Created an email account, separate Strava and Dropbox test accounts and linked them to emulator. Generated a mock GPX route around Vancouver and imported it to simulate an activity. Activity did not appear on Strava; began troubleshooting and analyzing logs. | 2.0 |
+| 30th Oct 2025 (Morning) | Umesh | Investigated Strava database structure using DB Browser for SQLite. Injected mock JSON activity entry into `strava-database`. Encountered app crash due to missing native library (`libFatmapSdk.so`). | 2.5 |
 
 ---
 
