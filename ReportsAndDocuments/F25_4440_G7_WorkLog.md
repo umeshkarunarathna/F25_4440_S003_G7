@@ -13,6 +13,9 @@
 | 29th Oct 2025 (Night) | Umesh  | Created an email account, separate Strava and Dropbox test accounts and linked them to emulator. Generated a mock GPX route around Vancouver and imported it to simulate an activity. Activity did not appear on Strava; began troubleshooting and analyzing logs. | 2.0 |
 | 30th Oct 2025 (Morning) | Umesh | Investigated Strava database structure using DB Browser for SQLite. Injected mock JSON activity entry into `strava-database`. Encountered app crash due to missing native library (`libFatmapSdk.so`). | 2.5 |
 | 1st Nov 2025 (Morning) | Sahan | Setup drover and made a successful connection to the emulator. encountered error connecting it to the emulator and getting the right ip address | 3 |
+| 5th Nov 2025 | Umesh | Uploaded prepared sample files to Dropbox to simulate user data and activity. Verified folder structure for forensic testing. | 1.0 |
+| 5th Nov 2025 | Umesh | Installed and configured both ALEAPP and MobSF tools in the project environment. Verified successful setup and readiness for analysis. | 1.5 |
+
 
 ---
 
