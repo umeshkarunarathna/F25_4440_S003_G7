@@ -15,6 +15,12 @@
 | 1st Nov 2025 (Morning) | Sahan | Setup drover and made a successful connection to the emulator. encountered error connecting it to the emulator and getting the right ip address | 3 |
 | 5th Nov 2025 | Umesh | Uploaded prepared sample files to Dropbox to simulate user data and activity. Verified folder structure for forensic testing. | 1.0 |
 | 5th Nov 2025 | Umesh | Installed and configured both ALEAPP and MobSF tools in the project environment. Verified successful setup and readiness for analysis. | 1.5 |
+| 7th Nov 2025 | Umesh | Attempted to create sample app data for Strava using emulator. | 1 |
+| 8th Nov 2025 | Umesh | Created sample activities for Strava account using a separate device and made it visible in the emulator. | 1 |
+| 9th Nov 2025 | Umesh | Pulled data/data directories of both the apps and ran ALEAPP on those folders. | 1.5 |
+| 9th Nov 2025 | Umesh | Analyzed permission errors for .mapbox & .fit files in Strava extraction. Reran with elevated privileges. | 1 |
+| 9th Nov 2025 | Umesh | Troubleshoot empty ALEAPP reports and manually inspected WAL/SQLite files for forensic artifacts. | 2 |
+| 11th Nov 2025 | Umesh | Attempted MobSF local server run via python and failed, then began docker setup for MobSF container | 1.5 |
 
 
 ---
