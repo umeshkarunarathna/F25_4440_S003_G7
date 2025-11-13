@@ -21,7 +21,10 @@
 | 9th Nov 2025 | Umesh | Analyzed permission errors for .mapbox & .fit files in Strava extraction. Reran with elevated privileges. | 1 |
 | 9th Nov 2025 | Umesh | Troubleshoot empty ALEAPP reports and manually inspected WAL/SQLite files for forensic artifacts. | 2 |
 | 11th Nov 2025 | Umesh | Attempted MobSF local server run via python and failed, then began docker setup for MobSF container | 1.5 |
-
+| 12th Nov 2025 | Umesh | Attempted dynamic analyzer configuration in MobSF. Encountered Android Runtime detection errors, emulator connection failures, and ADB remount issues. Verified that emulator was detected by MobSF but system partition was not writable. | 1 |
+| 12th Nov 2025 | Umesh | Investigated MobSF dynamic analysis requirement for API level 30-based emulators and created a fresh Android Studio emulator running Android 11 (API 30) to meet the minimum supported version by MobSF. | 0.5 |
+| 12th Nov 2025 | Umesh | Attempted to run dynamic analysis again with API 30 emulator, but MobSF reported system partition as read-only. | 1 |
+| 12th Nov 2025 | Umesh | Switched to static analysis workflow. Extracted APK files directly from emulator using ADB. Identified package locations, tested multiple extraction commands, and prepared APKs for Strava & Dropbox for MobSF static analysis. | 1 |
 
 ---
 
