@@ -15,16 +15,23 @@
 | 1st Nov 2025 (Morning) | Sahan | Setup drover and made a successful connection to the emulator. encountered error connecting it to the emulator and getting the right ip address | 3 |
 | 5th Nov 2025 | Umesh | Uploaded prepared sample files to Dropbox to simulate user data and activity. Verified folder structure for forensic testing. | 1.0 |
 | 5th Nov 2025 | Umesh | Installed and configured both ALEAPP and MobSF tools in the project environment. Verified successful setup and readiness for analysis. | 1.5 |
+| 6th Nov 2025 | Sahan | Tested Drozer connectivity to an Android emulator, learned how to start the Drozer agent, and explored basic commands (run app.package.list, run app.package.info). | 1.0 |
 | 7th Nov 2025 | Umesh | Attempted to create sample app data for Strava using emulator. | 1 |
+| 8th Nov 2025 | Sahan | Installed JADX-GUI and JADX-CLI, explored interface layout, and learned preferences for decompilation accuracy. | 1.5 |
 | 8th Nov 2025 | Umesh | Created sample activities for Strava account using a separate device and made it visible in the emulator. | 1 |
 | 9th Nov 2025 | Umesh | Pulled data/data directories of both the apps and ran ALEAPP on those folders. | 1.5 |
+| 9th Nov 2025 | Sahan | Practiced decompiling a sample APK using JADX, inspected file tree, learned how to navigate Java source, resources, and smali. | 2.0 |
+| 9th Nov 2025 | Sahan | Researched Drozer modules for attack surface mapping (scanner.activity, scanner.provider, scanner.broadcast).| 1.5 |
 | 9th Nov 2025 | Umesh | Analyzed permission errors for .mapbox & .fit files in Strava extraction. Reran with elevated privileges. | 1 |
 | 9th Nov 2025 | Umesh | Troubleshoot empty ALEAPP reports and manually inspected WAL/SQLite files for forensic artifacts. | 2 |
+| 10th Nov 2025 | Sahan | read articles on common Java decompilation issues. | 1.0 |
 | 11th Nov 2025 | Umesh | Attempted MobSF local server run via python and failed, then began docker setup for MobSF container | 1.5 |
 | 12th Nov 2025 | Umesh | Attempted dynamic analyzer configuration in MobSF. Encountered Android Runtime detection errors, emulator connection failures, and ADB remount issues. Verified that emulator was detected by MobSF but system partition was not writable. | 1 |
 | 12th Nov 2025 | Umesh | Investigated MobSF dynamic analysis requirement for API level 30-based emulators and created a fresh Android Studio emulator running Android 11 (API 30) to meet the minimum supported version by MobSF. | 0.5 |
 | 12th Nov 2025 | Umesh | Attempted to run dynamic analysis again with API 30 emulator, but MobSF reported system partition as read-only. | 1 |
 | 12th Nov 2025 | Umesh | Switched to static analysis workflow. Extracted APK files directly from emulator using ADB. Identified package locations, tested multiple extraction commands, and prepared APKs for Strava & Dropbox for MobSF static analysis. | 1 |
+| 13th Nov 2025 | Sahan | Practiced identifying exported components using Drozer; tested simple exploitation of exported activities using Drozer commands. | 1.0 |
+| 15th Nov 2025 | Sahan | Prepared notes for progress report. | 2.0 |
 
 ---
 
