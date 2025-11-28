@@ -1,0 +1,63 @@
+1. ANDROID / ADB COMMANDS
+1.1 Check device connection
+adb devices
+
+1.2 Connect emulator
+adb connect 127.0.0.1:5555
+
+1.3 List installed packages
+adb shell pm list packages
+
+1.4 Find package path
+adb shell pm path com.dropbox.android
+adb shell pm path com.instagram.lite
+adb shell pm path com.strava
+
+1.5 Extract APK from emulator
+adb shell pm path com.instagram.lite
+adb pull /data/app/~~~/base.apk instagram_lite.apk
+
+adb shell pm path com.dropbox.android
+adb pull /data/app/~~~/base.apk dropbox.apk
+
+2. DATA EXTRACTION (ADB PULL)
+
+Requires rooted emulator or writable /data.
+
+2.1 Pull full data/data folder of any app
+adb pull /data/data/com.dropbox.android dropbox_extracted/
+adb pull /data/data/com.instagram.lite insta_lite_data/
+adb pull /data/data/com.strava strava_data/
+
+2.2 Fix permission errors
+adb root
+adb remount
+
+3. TAR-BASED FULL EXTRACTION (Used for Dropbox + Strava Experiments)
+3.1 Create tar archive of data/data inside emulator
+adb shell
+cd /data/data
+tar -cvf /sdcard/full_data_backup.tar .
+
+3.2 Pull tar file to PC
+adb pull /sdcard/full_data_backup.tar
+
+3.3 Extract TAR on host machine
+tar -xvf full_data_backup.tar
+
+4. ALEAPP COMMANDS
+4.1 Run ALEAPP on folder
+python aleapp.py -i dropbox_extracted -o aleapp_dropbox_output
+python aleapp.py -i insta_lite_data -o aleapp_instalite_output
+python aleapp.py -i strava_data -o aleapp_strava_output
+
+5. MOBSF COMMANDS
+5.1 Start MobSF using Docker
+docker pull opensecurity/mobile-security-framework-mobsf
+docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf
+
+5.2 Alternative – run MobSF with volume
+docker run -it -p 8000:8000 -v /Users/umesh/MobSF:/root/.MobSF opensecurity/mobile-security-framework-mobsf
+
+5.3 Access MobSF from browser
+http://localhost:8000
