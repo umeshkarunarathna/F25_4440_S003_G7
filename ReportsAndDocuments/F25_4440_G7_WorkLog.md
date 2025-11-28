@@ -32,7 +32,18 @@
 | 12th Nov 2025 | Umesh | Switched to static analysis workflow. Extracted APK files directly from emulator using ADB. Identified package locations, tested multiple extraction commands, and prepared APKs for Strava & Dropbox for MobSF static analysis. | 1 |
 | 13th Nov 2025 | Sahan | Practiced identifying exported components using Drozer; tested simple exploitation of exported activities using Drozer commands. | 1.0 |
 | 15th Nov 2025 | Sahan | Prepared notes for progress report. | 2.0 |
-
+| 17th Nov 2025 | Umesh | Began analyzing Dropbox data extracted earlier via ADB. Opened the internal SQLite databases using DB Browser and reviewed folder metadata, sync records, and cached file paths. Added additional sample files to Dropbox to generate richer forensic artifacts. | 2.0 |
+| 17th Nov 2025 | Umesh | Investigated Strava login failure. Cleared app data, reinstalled APK, modified network settings. OTP verification consistently failed. | 1.5 |
+| 18th Nov 2025 | Umesh | Attempted Strava login on both physical phone and emulator. Physical login succeeded briefly, but emulator repeatedly rejected OTP. Captured and reviewed logcat errors. | 1.0 |
+| 19th Nov 2025 | Umesh | Re-opened previously extracted Strava databases. Verified presence of personal profile data (height, weight, DOB, city). Determined further data acquisition impossible without account access. | 1.5 |
+| 20th Nov 2025 | Umesh | Performed ALEAPP parsing on the entire emulator /data/data directory and analyzed extracted files. Identified SQLite fragments, WAL files, and partial Strava traces. Confirmed most Strava artifacts were incomplete due to failed login. | 1.0 |
+| 21st Nov 2025 | Umesh | Created a TAR archive of the emulator’s /data/data folder for consistency. Re-ran ALEAPP on TAR output to ensure full parsing. Final attempt to inject GPX/JSON mock activities into Strava DB; process failed due to app-side verification checks. Officially documented the Strava abandonment decision. | 1.0 |
+| 22nd Nov 2025 | Umesh | Conducted static analysis of the Pinterest APK using MobSF. Reviewed permissions, domain configurations, trackers, signature details, and hardcoded secrets. Summarized MobSF findings for report. | 1.5 |
+| 24th Nov 2025 | Umesh | Installed Instagram Lite APK on emulator. Created a fresh test account and performed typical user actions (viewing posts, navigating feed) to generate forensic data. Verified app stability compared to original Instagram app. | 1.0 |
+| 24th Nov 2025 (Evening) | Umesh | Extracted /data/data/com.instagram.lite using ADB. Prepared folders for ALEAPP ingestion. | 1.0 |
+| 25th Nov 2025 | Umesh | Ran ALEAPP on the extracted Instagram Lite folder. Recovered 1402+ cached images and metadata. Exported and validated HTML reports. | 1.5 |
+| 25th Nov 2025 (Night) | Umesh | Inspected Instagram Lite’s internal SQLite databases using DB Browser. Confirmed minimal local storage (mostly cache paths and small configuration tables). Documented findings. | 1.0 |
+| 27th Nov 2025 | Umesh |Drafted results & insights sections, prepared documentation, and organized screenshots for the report. | 2.0 |
 ---
 
 **Group:** F25_4440_G7  
