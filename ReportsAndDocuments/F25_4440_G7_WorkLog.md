@@ -32,18 +32,30 @@
 | 12th Nov 2025 | Umesh | Switched to static analysis workflow. Extracted APK files directly from emulator using ADB. Identified package locations, tested multiple extraction commands, and prepared APKs for Strava & Dropbox for MobSF static analysis. | 1 |
 | 13th Nov 2025 | Sahan | Practiced identifying exported components using Drozer; tested simple exploitation of exported activities using Drozer commands. | 1.0 |
 | 15th Nov 2025 | Sahan | Prepared notes for progress report. | 2.0 |
+| 16th Nov 2025 | Sahan | Continued dynamic IPC reconnaissance using Drozer; tested additional modules including app.broadcast.info, scanner.misc.readablefiles, and learned differences in syntax for package-level modules. | 1.5 |
+| 17th Nov 2025 | Sahan | Used Drozer to enumerate providers for Spotify and Trust Wallet; verified provider accessibility and tested queries on both connect and messaging authorities. | 2.5 |
 | 17th Nov 2025 | Umesh | Began analyzing Dropbox data extracted earlier via ADB. Opened the internal SQLite databases using DB Browser and reviewed folder metadata, sync records, and cached file paths. Added additional sample files to Dropbox to generate richer forensic artifacts. | 2.0 |
 | 17th Nov 2025 | Umesh | Investigated Strava login failure. Cleared app data, reinstalled APK, modified network settings. OTP verification consistently failed. | 1.5 |
+| 18th Nov 2025 | Sahan | Studied Intent handling capabilities using app.activity.forintent on exported components from vulnerable app; learned how exported Activities respond to unprivileged IPC calls. | 1.5 |
 | 18th Nov 2025 | Umesh | Attempted Strava login on both physical phone and emulator. Physical login succeeded briefly, but emulator repeatedly rejected OTP. Captured and reviewed logcat errors. | 1.0 |
+| 19th Nov 2025 | Sahan | Ran JDWP exposure scan (exploit.jdwp.check) to verify debugging attachment posture for Trust Wallet; documented behavior where detection is possible without exploit path. | 2.1 |
 | 19th Nov 2025 | Umesh | Re-opened previously extracted Strava databases. Verified presence of personal profile data (height, weight, DOB, city). Determined further data acquisition impossible without account access. | 1.5 |
+| 20th Nov 2025 | Sahan | Installed InsecureBankv2 on emulator and mapped full attack surface using Drozer; drafted exploitation flow points to showcase authentication bypass. | 1.7 |
 | 20th Nov 2025 | Umesh | Performed ALEAPP parsing on the entire emulator /data/data directory and analyzed extracted files. Identified SQLite fragments, WAL files, and partial Strava traces. Confirmed most Strava artifacts were incomplete due to failed login. | 1.0 |
+| 21th Nov 2025 | Sahan | Performed the main exploit demo using app.activity.start to launch PostLogin, bypassing authentication; validated access to sensitive banking UI without login. | 1.8 |
 | 21st Nov 2025 | Umesh | Created a TAR archive of the emulator’s /data/data folder for consistency. Re-ran ALEAPP on TAR output to ensure full parsing. Final attempt to inject GPX/JSON mock activities into Strava DB; process failed due to app-side verification checks. Officially documented the Strava abandonment decision. | 1.0 |
+| 22th Nov 2025 | Sahan | Opened Spotify APK in JADX-GUI; inspected AndroidManifest.xml for activity, provider, broadcast, and permission declarations for static cross-validation with Drozer results. | 2.5 |
 | 22nd Nov 2025 | Umesh | Conducted static analysis of the Pinterest APK using MobSF. Reviewed permissions, domain configurations, trackers, signature details, and hardcoded secrets. Summarized MobSF findings for report. | 1.5 |
+| 23th Nov 2025 | Sahan | Opened Trust Wallet APK in JADX; navigated sources and confirmed this build is not aggressively obfuscated; used global string search to identify network communication endpoints. | 2.5 |
+| 24th Nov 2025 | Sahan | Documented APK complexity from JADX Summary view; inspected native library architectures (ABI folders + .so variants). | 2.0 |
 | 24th Nov 2025 | Umesh | Installed Instagram Lite APK on emulator. Created a fresh test account and performed typical user actions (viewing posts, navigating feed) to generate forensic data. Verified app stability compared to original Instagram app. | 1.0 |
 | 24th Nov 2025 (Evening) | Umesh | Extracted /data/data/com.instagram.lite using ADB. Prepared folders for ALEAPP ingestion. | 1.0 |
+| 25th Nov 2025 | Sahan | Compared manifest export posture between Spotify and Trust Wallet in JADX with dynamic results from Drozer to form report insights. | 1.0 |
 | 25th Nov 2025 | Umesh | Ran ALEAPP on the extracted Instagram Lite folder. Recovered 1402+ cached images and metadata. Exported and validated HTML reports. | 1.5 |
 | 25th Nov 2025 (Night) | Umesh | Inspected Instagram Lite’s internal SQLite databases using DB Browser. Confirmed minimal local storage (mostly cache paths and small configuration tables). Documented findings. | 1.0 |
+| 26th Nov 2025 | Sahan | Practiced extracting interesting presentation points focusing on tool capability, sandbox posture, exported component abuse, and real-world recon limits. | 1.0 |
 | 27th Nov 2025 | Umesh |Drafted results & insights sections, prepared documentation, and organized screenshots for the report. | 2.0 |
+| 27th Nov 2025 | Sahan | Organized findings into report sections, captured screenshots and verified visual placements according to template. | 2.2 |
 ---
 
 **Group:** F25_4440_G7  
